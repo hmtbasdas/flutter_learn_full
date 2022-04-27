@@ -3,13 +3,17 @@ import 'package:flutter/services.dart';
 import 'package:flutterlearn/101/app_bar_view.dart';
 import 'package:flutterlearn/101/button_learn_view.dart';
 import 'package:flutterlearn/101/card_learn.dart';
+import 'package:flutterlearn/101/color_demos_view.dart';
 import 'package:flutterlearn/101/container_sized_box_learn_view.dart';
+import 'package:flutterlearn/101/custom_widget_learn.dart';
 import 'package:flutterlearn/101/exm_screen.dart';
 import 'package:flutterlearn/101/image_learn.dart';
 import 'package:flutterlearn/101/padding_learn.dart';
 import 'package:flutterlearn/101/scaffold_learn_view.dart';
+import 'package:flutterlearn/101/stateful_learn.dart';
 import 'package:flutterlearn/101/stateless_learn.dart';
 import 'package:flutterlearn/101/text_learn_view.dart';
+import 'package:flutterlearn/202/tab_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,6 +28,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Sa',
       theme: ThemeData.dark().copyWith(
+        tabBarTheme: TabBarTheme(
+          //vs
+        ),
         appBarTheme: AppBarTheme(
           centerTitle: true,
           backgroundColor: Colors.red,
@@ -31,7 +38,7 @@ class MyApp extends StatelessWidget {
           systemOverlayStyle: SystemUiOverlayStyle.light,
         ),
       ),
-      home: ExmScreen(),
+      home: TabLearnView(),
       debugShowCheckedModeBanner: false,
     );
   }
