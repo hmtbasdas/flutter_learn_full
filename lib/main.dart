@@ -13,10 +13,15 @@ import 'package:flutterlearn/101/scaffold_learn_view.dart';
 import 'package:flutterlearn/101/stateful_learn.dart';
 import 'package:flutterlearn/101/stateless_learn.dart';
 import 'package:flutterlearn/101/text_learn_view.dart';
+import 'package:flutterlearn/202/package_learn.dart';
 import 'package:flutterlearn/202/service/comments_learn_view.dart';
 import 'package:flutterlearn/202/service/service_learn_view.dart';
 import 'package:flutterlearn/202/service/service_post_learn.dart';
 import 'package:flutterlearn/202/tab_learn.dart';
+import 'package:flutterlearn/202/theme/dark_theme.dart';
+import 'package:flutterlearn/202/theme/light_theme.dart';
+import 'package:flutterlearn/202/theme_learn.dart';
+import 'package:flutterlearn/202/widget_size_enum.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +35,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Sa',
-      theme: ThemeData.dark().copyWith(
+      theme: LightTheme().themeData /*or -- DarkTheme().themeData*/,
+      /*ThemeData.dark().copyWith(
         tabBarTheme: TabBarTheme(
           //vs
         ),
@@ -40,8 +46,8 @@ class MyApp extends StatelessWidget {
           elevation: 0,
           systemOverlayStyle: SystemUiOverlayStyle.light,
         ),
-      ),
-      home: ServiceLearnView(),
+      ),*/
+      home: ThemeLearnView(),
       debugShowCheckedModeBanner: false,
     );
   }
