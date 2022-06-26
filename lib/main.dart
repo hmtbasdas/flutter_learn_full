@@ -13,10 +13,16 @@ import 'package:flutterlearn/101/scaffold_learn_view.dart';
 import 'package:flutterlearn/101/stateful_learn.dart';
 import 'package:flutterlearn/101/stateless_learn.dart';
 import 'package:flutterlearn/101/text_learn_view.dart';
+import 'package:flutterlearn/202/animated_learn.dart';
+import 'package:flutterlearn/202/form_learn_view.dart';
+import 'package:flutterlearn/202/image_learn.dart';
+import 'package:flutterlearn/202/oop_learn.dart';
+import 'package:flutterlearn/202/oop_learn_view.dart';
 import 'package:flutterlearn/202/package_learn.dart';
 import 'package:flutterlearn/202/service/comments_learn_view.dart';
 import 'package:flutterlearn/202/service/service_learn_view.dart';
 import 'package:flutterlearn/202/service/service_post_learn.dart';
+import 'package:flutterlearn/202/state_manage/state_manage_learn_view.dart';
 import 'package:flutterlearn/202/tab_learn.dart';
 import 'package:flutterlearn/202/theme/dark_theme.dart';
 import 'package:flutterlearn/202/theme/light_theme.dart';
@@ -47,7 +53,7 @@ class MyApp extends StatelessWidget {
           systemOverlayStyle: SystemUiOverlayStyle.light,
         ),
       ),*/
-      home: ThemeLearnView(),
+      home: FormLearnView(),
       debugShowCheckedModeBanner: false,
     );
   }
